@@ -15,24 +15,22 @@ Une API Django pour déterminer si une année est bissextile, avec des fonctionn
 
 1. Clonez le dépôt :
     ```bash
-    git clone <url-du-repository>
+    git clone https://github.com/ProxTricky/leap-year-api.git
     cd leapyear_api
     ```
 
 2. Créez et activez un environnement virtuel :
     ```bash
-    python -m venv env
-    source env/bin/activate
+    poetry shell
     ```
 
 3. Installez les dépendances :
     ```bash
-    pip install -r requirements.txt
+    poetry install
     ```
 
 4. Créez les migrations et appliquez-les pour créer les tables nécessaires :
     ```bash
-    python manage.py makemigrations leapyear_checker
     python manage.py migrate
     ```
 
